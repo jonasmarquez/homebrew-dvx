@@ -1,6 +1,6 @@
 class Dvx < Formula
   desc "Dev eXperience helper CLI to manage dimensions, envs, Kubernetes and secrets"
-  homepage "https://github.com/<jonasmarquez>/dvx-bin"
+  homepage "https://github.com/jonasmarquez/dvx-bin"
   version "0.12.0"
 
   on_macos do
