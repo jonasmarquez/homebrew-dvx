@@ -16,7 +16,7 @@ class Dvx < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.13.0/dvx_0.13.0_linux_amd64.tar.gz"
-      sha256 "f0e63180324a963cb786b298b82fb572529d61c6aab09ad47d7be362f075e090"
+      sha256 "79589477323c1345bfd34ce02f59edb33da59464dfc88e3e0c25e3e749b4be0d"
     elsif Hardware::CPU.arm?
       url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.13.0/dvx_0.13.0_linux_arm64.tar.gz"
       sha256 "0bcecbff88a6a0c315dc4951d6b0e09ab6e5a4f931160285f2ddef708af37172"
