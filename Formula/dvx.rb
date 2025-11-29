@@ -1,25 +1,25 @@
 class Dvx < Formula
   desc "Dev eXperience helper CLI to manage dimensions, envs, Kubernetes and secrets"
   homepage "https://github.com/jonasmarquez/dvx-bin"
-  version "0.18.0"
+  version "0.18.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.18.0/dvx_0.18.0_darwin_arm64.tar.gz"
-      sha256 "f54dc4b7251af53e3445a3d89d2c123f4043c955e5f7fbf17c1e53363f3117c8"
+      url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.18.1/dvx_0.18.1_darwin_arm64.tar.gz"
+      sha256 "04675252ae432770e4223d2669d27ca386addfafb8ecac152c60d1ac75c3a08a"
     elsif Hardware::CPU.intel?
-      url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.18.0/dvx_0.18.0_darwin_amd64.tar.gz"
-      sha256 "18978d9da0a2c4313c5dfe3faa1f1d19d33cf4a45e35ae2baabc40ea26e2c319"
+      url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.18.1/dvx_0.18.1_darwin_amd64.tar.gz"
+      sha256 "90c58af5df7f737783f946e64de54708342f4b1dad87ff873aab0deaa1545487"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.18.0/dvx_0.18.0_linux_amd64.tar.gz"
-      sha256 "d626a8dff3c3730f3139e55285e4743bf1ef3e204a627aa1b8946885e4fa9fc8"
+      url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.18.1/dvx_0.18.1_linux_amd64.tar.gz"
+      sha256 "e691edf7f7010f709080e5670f6de7896792462a081d4f69c10e67a03efa2020"
     elsif Hardware::CPU.arm?
-      url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.18.0/dvx_0.18.0_linux_arm64.tar.gz"
-      sha256 "573c777f389a1f0df3b2311efee9b362d431d966379436a74dd4644f8aacd776"
+      url "https://github.com/jonasmarquez/dvx-bin/releases/download/v0.18.1/dvx_0.18.1_linux_arm64.tar.gz"
+      sha256 "9c4eb3692fa98fe81b7b1ff392c3f69887ea68045a2d8ae10bf868ba038dac77"
     end
   end
 
@@ -29,6 +29,6 @@ class Dvx < Formula
 
   test do
     output = shell_output("#{bin}/dvx version")
-    assert_match "dvx ⚙️  version 0.18.0", output
+    assert_match "dvx ⚙️  version 0.18.1", output
   end
 end
